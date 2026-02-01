@@ -1,0 +1,10 @@
+name: "Hello World Action"
+description: "A simple hello world composite action"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Say hello
+      shell: bash
+      run: |
+        echo "Hello World 👋 from a custom action!"

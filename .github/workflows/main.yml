@@ -1,0 +1,16 @@
+name: Test Hello World Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run my custom action
+        uses: ./.github/actions/hello-world
